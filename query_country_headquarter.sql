@@ -148,7 +148,7 @@ WHEN geo_country = 'Algeria' THEN 'emea'
 WHEN geo_country = 'Albania' THEN 'emea' 
 
 ELSE visitor_headquarter_market 
-END visitor_headquarter_market
+END geo_headquarter
 FROM `firm-crossing-87915.google_analytics_data.ga_flatten_data_20240108` 
 WHERE visitor_headquarter_market != 'null' AND visitor_headquarter_market != 'not set' AND geo_country != '(not set)'
 ORDER BY 1 DESC
